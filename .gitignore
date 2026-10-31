@@ -1,0 +1,21 @@
+### --- DOCKER ---
+.docker/
+docker-compose.override.yml
+*.dockerlog
+
+### --- DATA VOLUMES (ДАННЫЕ МОНИТОРИНГА) ---
+# Исключаем локальные базы данных, где хранятся метрики и логи
+data/
+var/
+.volumes/
+
+### --- SYSTEM & APPLICATION LOGS ---
+# Логи работы API и систем мониторинга
+logs/
+*.log
+
+### --- IDE & SYSTEM FILES ---
+# Файлы настроек редакторов кода и операционных систем
+.vscode/
+*.swp
+Thumbs.db
